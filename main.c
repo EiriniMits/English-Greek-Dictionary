@@ -86,7 +86,7 @@ int main(void)
                 save(); // apo8hkeuei tis allages sto dictionary.txt
                 printf("Changes saved to the dictionary successfully!\n");
      }
-     printf("   -- Telos Programmatos --   ");
+     printf("   ---  THE END  ---   ");
 
 }
 
