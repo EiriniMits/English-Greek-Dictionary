@@ -16,7 +16,7 @@ void copy();
 void save();
 
 /*
- * @author: Eirini Mitsopoulou
+ * @author Eirini Mitsopoulou
  */
 
 
