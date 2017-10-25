@@ -83,7 +83,7 @@ int main(void)
      printf("Do you want to save the changes? ('Y'/'N')");
      scanf("%s",choice2);
      if(choice2[0] == 'y' || choice2[0] == 'Y'){
-                save(); // apo8hkeuei tis allages sto store.txt
+                save(); // apo8hkeuei tis allages sto dictionary.txt
                 printf("Changes saved to the dictionary successfully!\n");
      }
      printf("   -- Telos Programmatos --   ");
@@ -94,9 +94,9 @@ void copy(){
     FILE *fp,*fp1;
     char *line;
     line = (char *)calloc(20,sizeof(char));
-    fp = fopen("store.txt", "r");
+    fp = fopen("dictionary.txt", "r");
     if(fp == NULL)
-        printf("store.txt file does not exist.");
+        printf("dictionary.txt file does not exist.");
     else
     {
         fp1 = fopen("replical.txt", "w");
@@ -119,7 +119,7 @@ void save(){
         printf("replical.txt file does not exist.");
     else
     {
-        fp1 = fopen("store.txt", "w");
+        fp1 = fopen("dictionary.txt", "w");
             while (fgets(line, 80, fp) != NULL){
                         fscanf(fp,"%s",line);
                         fputc('\n',fp1);
@@ -153,7 +153,7 @@ void add(char *g,char *e){
     }
     fp = fopen("replical.txt","a");
     if(fp == NULL)
-        printf(".txt file does not exist.");
+        printf("replical.txt file does not exist.");
     else
     {//grafei tis le3eis sto telos tou arxeiou
         fputc('\n',fp);
