@@ -1,5 +1,7 @@
 # English-Greek-Dictionary
 
+This project was created for academic purposes on the subject of 'Basic Programming Principles' at the Aristotle University of Thessaloniki.
+
 A project written in C language that translates words from Greek into English and vice versa. The program retains a dictionary stored in a text file, which contains for each Greek word the corresponding English one. A menu of options displayed to the user is listed below:
 
 1. Insert Term
